@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instalación SO - Tutorial</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Instalación SO</div>
+            <ul>
+                <li><a href="#preparacion">Preparación</a></li>
+                <li><a href="#usb-booteable">USB Booteable</a></li>
+                <li><a href="#bios-uefi">BIOS/UEFI</a></li>
+                <li><a href="#instalacion">Instalación</a></li>
+                <li><a href="#post-instalacion">Post-Instalación</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Instalación SO - Tutorial</h1>
+        <p class="author">Por Santino Cataldo</p>
+        <p class="description">Tutorial detallado y claro sobre cómo instalar Windows en una notebook, accesible para usuarios con conocimientos básicos y avanzados en tecnología.</p>
+        
+        <section id="preparacion">
+            <h2>1. Preparación</h2>
+            <h3>Requisitos de Hardware:</h3>
+            <ul>
+                <li>Procesador: 1 GHz o más rápido</li>
+                <li>RAM: 2 GB para 32 bits o 4 GB para 64 bits</li>
+                <li>Espacio en disco: 32 GB o más</li>
+            </ul>
+            <h3>Software y Materiales:</h3>
+            <ul>
+                <li>Imagen ISO de Windows: <a href="https://www.microsoft.com/es-es/software-download/windows10" target="_blank">Descargar Windows 10</a></li>
+                <img src="" alt="">
+                <li>Unidad USB de 8 GB o más</li>
+                <li>Programa Rufus: <a href="https://rufus.ie/" target="_blank">Descargar Rufus</a></li>
+            </ul>
+        </section>
+
+        <section id="usb-booteable">
+            <h2>2. Creación de un USB Booteable</h2>
+            <ol>
+                <li>Descarga e instala Rufus desde el enlace proporcionado.</li>
+                <li>Inserta tu unidad USB en la notebook.</li>
+                <li>Abre Rufus y configura:
+                    <ul>
+                        <li>Dispositivo: Selecciona tu unidad USB</li>
+                        <li>Tipo de arranque: Selecciona la ISO de Windows</li>
+                        <li>Esquema de partición: GPT</li>
+                        <li>Sistema destino: UEFI (non CSM)</li>
+                    </ul>
+                </li>
+                <li>Haz clic en "EMPEZAR" y espera a que termine el proceso</li>
+            </ol>
+        </section>
+
+        <section id="bios-uefi">
+            <h2>3. Configuración del BIOS/UEFI</h2>
+            <ol>
+                <li>Reinicia tu notebook.</li>
+                <li>Durante el arranque, presiona la tecla para acceder al BIOS/UEFI (comúnmente F2, Del, o Esc).</li>
+                <li>Busca la sección "Boot" o "Arranque".</li>
+                <li>Cambia el orden de arranque para que el USB sea la primera opción.</li>
+                <li>Guarda los cambios y sal del BIOS/UEFI. Pulse F10 y, a continuación, pulse Y para Guardar cambios y Salir.</li>
+            </ol>
+        </section>
+
+        <section id="instalacion">
+            <h2>4. Instalación de Windows</h2>
+            <ol>
+                <li>Arranca desde el USB.</li>
+                <li>En la pantalla "Instalar Windows":
+                    <ul>
+                        <li>Selecciona idioma, formato de hora y teclado.</li>
+                        <li>Haz clic en "Instalar ahora".</li>
+                    </ul>
+                </li>
+                <li>Introduce la clave de producto si la tienes, o selecciona "No tengo clave de producto".</li>
+                <li>Selecciona la versión de Windows que deseas instalar.</li>
+                <li>Acepta los términos de licencia.</li>
+                <li>Selecciona "Instalación personalizada".</li>
+                <li>Elige el disco donde instalarás Windows.</li>
+                <li>Espera a que se complete la instalación (la notebook se reiniciará varias veces).</li>
+                <li>Configura las opciones iniciales de Windows (cuenta de usuario, privacidad, etc.).</li>
+            </ol>
+        </section>
+
+        <section id="post-instalacion">
+            <h2>5. Post-Instalación y Configuración Adicional</h2>
+            <ol>
+                <li>Actualiza Windows:
+                    <ul>
+                        <li>Ve a Configuración > Actualización y seguridad > Windows Update.</li>
+                        <li>Haz clic en "Buscar actualizaciones" e instala todas las disponibles.</li>
+                    </ul>
+                </li>
+                <li>Instala los controladores:
+                    <ul>
+                        <li>Usa Windows Update para controladores básicos.</li>
+                        <li>Visita el sitio web del fabricante de tu notebook para controladores específicos.</li>
+                    </ul>
+                </li>
+                <li>Instala software esencial:
+                    <ul>
+                        <li>Navegador web (ej. Chrome, Brave)</li>
+                        <li>Suite de oficina (ej. Microsoft Office)</li>
+                        <li>Antivirus (Windows Defender viene preinstalado)</li>
+                    </ul>
+                </li>
+            </ol>
+        </section>
+    </main>
+</body>
+</html>
