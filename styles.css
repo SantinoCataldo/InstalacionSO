@@ -108,3 +108,8 @@ a:hover {
 section {
     margin-bottom: 3rem;
 }
+
+img {
+    width: 700px;
+    margin: 30px 0;
+}
